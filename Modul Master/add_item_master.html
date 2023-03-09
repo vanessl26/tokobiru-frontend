@@ -14,7 +14,7 @@
   <!-- Import font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
-  <title>Edit Account</title>
+  <title>Add Item</title>
 
   <style>
     body{
@@ -27,37 +27,43 @@
       font-weight: bold;
     }
   </style>
-    
 </head>
 <body>
   <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-md-4 text-center">
-        <img src="pic/foto_profil.png" alt="Foto Profil" class="img-fluid mt-3">
-        <p class="fw-bold">Nama Lengkap</p>
-        <p class="pb-4">email@gmail.com</p>
-
-        <!-- Form -->
+    <div class="row justify-content-center vh-100 align-items-center">
+      <div class="col-md-5 text-center">
         <form>
           <div class="input-group mb-3">
             <span class="input-group-text w-25" id="inputGroup-sizing-default">Id</span>
             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
           <div class="input-group mb-3">
-            <span class="input-group-text w-25" id="inputGroup-sizing-default">Full Name</span>
+            <span class="input-group-text w-25" id="inputGroup-sizing-default">Item Name</span>
             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
           <div class="input-group mb-3">
-            <span class="input-group-text w-25" id="inputGroup-sizing-default">Email</span>
-            <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <span class="input-group-text w-25" id="inputGroup-sizing-default">Item Category</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
           <div class="input-group mb-3">
-            <span class="input-group-text w-25">Address</span>
+            <span class="input-group-text w-25">Description</span>
             <textarea class="form-control" aria-label="With textarea"></textarea>
           </div>
           <div class="input-group mb-3">
-            <span class="input-group-text w-25" id="inputGroup-sizing-default">Phone No.</span>
+            <span class="input-group-text w-25" id="inputGroup-sizing-default">Stock</span>
             <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text w-25" id="inputGroup-sizing-default">Price</span>
+            <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text w-25" id="inputGroup-sizing-default">Barcode</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text w-25" id="inputGroup-sizing-default">Expired</span>
+            <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text w-25" id="inputGroup-sizing-default">Active</span>
@@ -66,17 +72,9 @@
               <option value="1">Inactive</option>
             </select>
           </div>
-          <div class="input-group mb-5">
-            <span class="input-group-text w-25" id="inputGroup-sizing-default">Role</span>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Admin</option>
-              <option value="1">Staff</option>
-              <option value="1">User</option>
-            </select>
-          </div>
         </form>
         <div class="text-center mb-3">
-          <button class="btn text-white fw-bold" type="submit" style="background-color: #6B9BD0;">Save Changes</button>
+          <button class="btn text-white fw-bold" type="submit" style="background-color: #6B9BD0;">Add Items</button>
         </div>
       </div>
     </div>
